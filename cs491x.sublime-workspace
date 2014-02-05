@@ -1,0 +1,282 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"def	#ifndef … #define … #endif"
+			],
+			[
+				"vec",
+				"vec3farray"
+			],
+			[
+				"abstract",
+				"abstractScene"
+			],
+			[
+				"abstrac",
+				"abstractScene"
+			],
+			[
+				"glut",
+				"glutMouseClickEvent"
+			],
+			[
+				"abstr",
+				"abstractScene"
+			],
+			[
+				"ab",
+				"abstractScene"
+			],
+			[
+				"glutK",
+				"glutKeyPressEvent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "template/FraserLuke.tex",
+			"settings":
+			{
+				"buffer_size": 1206,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"set sy c",
+				"Set Syntax: C"
+			],
+			[
+				"new vie",
+				"File: New View into File"
+			]
+		],
+		"width": 404.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/luke/Documents/cs491x/wk1/anaffectiveguiderobotinashipping/references.bib",
+		"/home/luke/Documents/cs491x/wk1/anaffectiveguiderobotinashipping/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk1/usingpropioceptivesensors/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk1/usingpropioceptivesensors/references.bib",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/src/CMakeLists.txt",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/src/ms_segmentation_test.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/devel/include/simpleNavigation/vec3farray.h",
+		"/home/luke/Documents/cs425/ros_srrc_13/devel/include/simpleNavigation/vec3f.h",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/houghTransform/CMakeLists.txt",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/houghTransform/hsv.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/cascadeClassifiers/training.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/cascadeClassifiers/feature_tracker.h",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/cascadeClassifiers/feature_tracker.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/houghTransform/houghtennis.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/simpleNavigation/src/flubr_pub.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/simpleNavigation/package.xml",
+		"/home/luke/Documents/cs425/ros_srrc_13/ros_srrc_13.sublime-project",
+		"/home/luke/Downloads/objectDetection.cpp",
+		"/home/luke/Documents/cs425/ros_srrc_13/Documents/Rules/samples/3.1.Sampes.pdf",
+		"/home/luke/Downloads/TunnelTraveler.nxc",
+		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/houghTransform/proj/src",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/abstractscene.cpp",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/baseglscene.h",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/baseglscene.cpp",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/abstractscene.h",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/main.cpp",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/glapplication.cpp",
+		"/home/luke/Documents/cs382r/assignments/cs382ai/A1/MC.AI.py",
+		"/home/luke/Documents/minecraftGame/minecraftgame/src/engine/base/glapplication.h"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"static",
+			"virtual"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "template/FraserLuke.tex",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "cs491x.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"houg",
+				"src/objectDetection/houghTransform/houghtennis.cpp"
+			],
+			[
+				"vec",
+				"devel/include/simpleNavigation/vec3f.h"
+			],
+			[
+				"vec3",
+				"devel/include/simpleNavigation/vec3f.h"
+			],
+			[
+				"ab.c",
+				"engine/base/abstractscene.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

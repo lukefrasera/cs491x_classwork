@@ -1,0 +1,10 @@
+syntax: glob
+
+*.pdf
+*.log
+*~
+*.out
+*.aux
+*.bbl
+*.tex~
+*.blg
