@@ -39,6 +39,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "wk10/delibratedelay/Fraserdelay.tex",
+			"settings":
+			{
+				"buffer_size": 2888,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wk10/humangaze/Fraser_humangaze.tex",
+			"settings":
+			{
+				"buffer_size": 2334,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -55,7 +71,7 @@
 				"File: New View into File"
 			]
 		],
-		"width": 404.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -75,13 +91,39 @@
 	},
 	"file_history":
 	[
+		"/home/luke/Documents/cs491x/wk10/delibratedelay/references.bib",
+		"/home/luke/Documents/cs491x/createreviewfolder.sh",
+		"/home/luke/Documents/cs491x/wk7/interface/references.bib",
+		"/home/luke/Documents/cs491x/wk7/interface/interface.tex",
+		"/home/luke/Documents/cs491x/wk7/fexibleinterface/references.bib",
+		"/home/luke/Documents/cs491x/wk7/fexibleinterface/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk10/humangaze/references.bib",
+		"/home/luke/Documents/cs491x/wk6/peopleaware/people.tex",
+		"/home/luke/Documents/cs491x/wk6/minerva/minerva.tex",
+		"/home/luke/Documents/cs491x/wk6/peopleaware/references.bib",
+		"/home/luke/Documents/cs491x/wk6/minerva/references.bib",
+		"/home/luke/Documents/cs491x/wk4/whatishuman/human.tex",
+		"/home/luke/Documents/cs491x/wk5/whoisit/whoisit.tex",
+		"/home/luke/Documents/cs491x/wk5/whoisit/references.bib",
+		"/home/luke/Documents/cs491x/wk5/removepapaer/removingpaper.tex",
+		"/home/luke/Documents/cs491x/wk5/designingrobot/designingrobot.tex",
+		"/home/luke/Documents/cs491x/wk5/designingrobot/references.bib",
+		"/home/luke/Documents/cs491x/wk4/imsorrydave/sorrydave.tex",
+		"/home/luke/Documents/cs491x/wk4/imsorrydave/references.bib",
+		"/home/luke/Documents/cs491x/wk5/whoisit/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk1/robotsinorganization/references.bib",
+		"/home/luke/Documents/cs491x/wk1/robotsinorganization/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk1/anaffectiveguiderobotinashipping/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk3/wiardofoz/FraserLuke.tex",
+		"/home/luke/Documents/cs491x/wk3/roomba/references.bib",
+		"/home/luke/Documents/cs491x/wk3/wiardofoz/references.bib",
+		"/home/luke/Documents/cs491x/wk3/roomba/FraserLuke.tex",
 		"/home/luke/Documents/cs491x/wk1/snackbot/FraserLuke.tex",
 		"/home/luke/Documents/cs491x/wk1/asimo/FraserLuke.tex",
 		"/home/luke/Documents/cs491x/wk1/snackbot/references.bib",
 		"/home/luke/Documents/cs491x/.hgignore",
 		"/home/luke/Documents/cs491x/wk1/asimo/references.bib",
 		"/home/luke/Documents/cs491x/wk1/anaffectiveguiderobotinashipping/references.bib",
-		"/home/luke/Documents/cs491x/wk1/anaffectiveguiderobotinashipping/FraserLuke.tex",
 		"/home/luke/Documents/cs491x/wk1/usingpropioceptivesensors/FraserLuke.tex",
 		"/home/luke/Documents/cs491x/wk1/usingpropioceptivesensors/references.bib",
 		"/home/luke/Documents/cs425/ros_srrc_13/src/objectDetection/src/CMakeLists.txt",
@@ -112,7 +154,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -145,8 +187,66 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wk10/delibratedelay/Fraserdelay.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2757,
+								2757
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wk10/humangaze/Fraser_humangaze.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2181,
+								2181
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -224,6 +324,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/cs425/ros_srrc_13/ros_srrc_13.sublime-workspace"
+			]
 		],
 		"width": 380.0
 	},
