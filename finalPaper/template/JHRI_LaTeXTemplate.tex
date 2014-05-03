@@ -1,0 +1,352 @@
+\documentclass[lettersize, apacite, twoside, HRI]{apa_HRI}
+% Required package for HRI journal format
+\usepackage{times}
+
+% some very useful LaTeX packages include:
+\usepackage{graphicx}  % Written by David Carlisle and Sebastian Rahtz
+\usepackage{subfigure} % Written by Steven Douglas Cochran
+                        % This package makes it easy to put subfigures
+                        % in your figures. i.e., "figure 1a and 1b"
+                        % Docs are in "Using Imported Graphics in LaTeX2e"
+                        % by Keith Reckdahl which also documents the graphicx
+                        % package (see above). subfigure.sty is already
+                        % installed on most LaTeX systems. The latest version
+                        % and documentation can be obtained at:
+                        % http://www.ctan.org/tex-archive/macros/latex/contrib/supported/subfigure/
+                      
+% The following are options that can be used in apa.cls but that are not used in apa_HRI
+%\journal{Do not include -- hard coded}
+%\volume{Volume 1, Number 3, pp. 1-16}
+%\copnum{Do not include -- hard coded}
+%\ccoppy{Do not include -- hardcoded}
+%\ThreeLevelHeading  % HRI has a required heading style, and the HRI option overrides any of the apa.cls heading style commands
+
+% The following are required options for the HRI journal format
+\rightheader{Short Title}   % This should be the title, or a shortened version of the title if your title is long.
+% \shorttitle{Beyond Fan-Out}    % Not used in HRI journal mode
+\leftheader{LastName1 et al.}	  % For one or two authors, include both authors last names.  For three or more, use first author's last name et al.
+
+% REQUIRED: paper title
+\title{An Informative Title: An Optional Subtitle}
+
+% REQUIRED: Author names and affiliations
+% Note that authors from up to six affiliations can be added.  Beyond that, you are on your own.
+% Group authors from the same affiliation together -- see example for two authors
+%\author{Sole Author}
+%\affiliation{Author Affiliation}
+\twoauthors{First Author, Another Author}{Someone Else}
+\twoaffiliations{First Affiliation}{Second Affiliation}
+%\threeauthors{First Author}{Second Author}{Third Author} 
+%\threeaffiliations{First Affiliation}{Second Affiliation}{Some Important Place}
+%\fourauthors{First Author}{Second Author}{Third Author}{Fourth Author}
+%\fouraffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}
+%\fiveauthors{First Author}{Second Author}{Third Author}{Fourth Author}{Fifth Author}
+%\fiveaffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}{Fifth Affiliation}
+%\sixauthors{First Author}{Second Author}{Third Author}{Fourth Author}{Fifth Author}{Sixth Author}
+%\sixaffiliations{First Affiliation}{Second Affiliation}{Third Affiliation}{Fourth Affiliation}{Fifth Affiliation}{Sixth Affiliation}
+
+% REQUIRED: author addresses and email addresses
+% Only the company/university/lab should be listed in affiliations above.
+% The full address and email addresses will be included in a footnote.
+% An address and email are only required for the corresponding author, but others may be included.
+
+% REQUIRED: abstract
+\abstract{
+Use as many key words as possible in your abstract. Limit its length to 960 characters. For an empirical study, use 100 to 120 words to describe the problem, participants, method, findings, and conclusions. For a theoretical or review article, use 75 to 100 words to state the article's topic, thesis, scope, sources, and conclusions. Define all abbreviations and unique terms. Spell out names of tests and technologies. Use paraphrases, not quotations.  }
+
+% REQUIRED: keywords
+\keywords{Human-robot interaction, recognition, sensors, emotions}
+
+% OPTIONAL: at submission time, you may include the following terms that may be useful for reviewers.
+% These should be commented out in the final manuscript submrission. 
+%\field{Technical, behavioral, design, or other}
+%\contribution{article, short report, perspective, other (state)}
+%\COI{Conflict of interest?  state}
+%\uniqueness{State here (see CFP for required statement)}
+
+%\acknowledgements{}
+
+% make the title area
+\begin{document}
+\maketitle
+
+%*****************************************************************************************************
+\section{Introduction}
+\label{sec:introduction}
+
+This article is a description of how to create a document of the appropriate style for a submission to the {\em Journal of Human-Robot Interaction} (JHRI).   The journal is an interdisciplinary journal, so it is useful to note that different disciplines use the term ``style'' differently.  This article should help you understand both usages, and create a document that can be easily read and understood by readers from a wide variety of disciplines.
+
+The first use of the term ``style'' refers to typesetting and layout issues.  The {\tt sample\_final\_manuscript.tex} document gives an  example of how to use the {\tt apa\_HRI.cls} document and how to select appropriate \LaTeX\ settings.  There is also a Word\copyright document that serves as a template for the typesetting and layout issues.
+
+The second use of the term ``style'' refers to conforming to standard headings, tables, figures, references and citation formats.  The {\em Journal of Human-Robot Interaction} uses the standards from the American Psychological Association (APA) as the basis for these style settings.  Please note that the \LaTeX\ formatting files take care of most of the reference and citation issues.
+
+More importantly, please note that note that empirical-based and behavioral papers should conform closely to the APA style for headings, etc., but that most technical and design papers will deviate from this standard.  If you have questions, please contact your area editor.
+
+
+%*****************************************************************************************************
+\section{The Title Page}
+The HRI Journal format has specific requirements for getting the document to format correctly.  Please follow these guidelines closely.
+\subsection{\LaTeX\ Options, Document Class, and Required Packages}
+Use the {\sf lettersize}, {\sf apacite}, {\sf twoside}, and {\sf HRI} options when specifying the document class.
+
+\begin{verbatim}
+	\documentclass[lettersize, apacite, twoside, HRI]{apa_HRI}
+\end{verbatim}
+To get the correct fonts for the HRI Journal format, the {\sf times} package is required:
+\begin{verbatim}
+	\usepackage{times}
+\end{verbatim}
+
+\subsection{Title, Author(s), and Headers}
+A paper title, list of authors, and some header information is required.  All of this information must be given before using the {\sf \textbackslash%
+begindocument} command.
+
+The paper title is specified using the following command:
+\begin{verbatim}
+	\title{An Informative Title: An Optional Subtitle}
+\end{verbatim}
+
+A sole author is created using the following commands:
+\begin{verbatim}
+	\author{Sole Author}
+	\affiliation{Author Affiliation}
+\end{verbatim}
+Multiple authors from different affiliations can be created by uncommenting the appropriate code in the sample {\tt .tex} document.  For example, three authors with two affiliations can be created using the following commands:
+\begin{verbatim}
+	\twoauthors{First Author, Another Author}{Someone Else}
+	\twoaffiliations{First Affiliation}{Second Affiliation}
+\end{verbatim}
+The author's address and email is included in a footnote at the bottom of the first page.  The address and email are only required for the corresponding author, but addresses and emails can be included for all authors.  The command is as follows:
+\begin{verbatim}
+	\acknowledgements{Address, email}  	
+\end{verbatim}
+
+The HRI journal format uses running headers at the top of each page, with the title and author alternating between pages.  Use the following commands to specify these headers:
+\begin{verbatim}
+	\rightheader{Short Title} 
+	\leftheader{LastName1 et al.}
+\end{verbatim}
+When there are one or two authors, use the last names of the authors for the left header.  When there are three or more authors, use the last name of the first author followed by {\sf ``et al.''}, noting the proper punctuation with the trailing period.
+
+\subsection{Abstract and Keywords}
+The HRI Journal format also requires an abstract and a list of keywords. This information must be given before using the {\sf \textbackslash%
+begindocument} command.  The abstract and list of keywords are created as follows:
+\begin{verbatim}
+	\abstract{This is where the abstract goes.}
+	\keywords{And here are the keywords.}
+\end{verbatim}
+After specifying the title, author, abstract, and keywords, you can begin the document and make the title.
+
+%*****************************************************************************************************
+\section{Sections}
+Section numbering uses a variation of the APA style, but changed to include section numbering.   Formatting a submission to the HRI Journal requires that  you use the standard \LaTeX\ section commands, as illustrated below.
+\begin{verbatim}
+	\pagebreak
+	\section{Section Name}
+	section text
+	\subsection{Subsection Name}
+	subsection text
+	\subsubsection{Subsubsection Name}
+	subsubsection text
+	\paragraph{Paragraph Name}
+	paragraph text
+	\subparagraph{Subparagraph Name}
+	subparagraph text
+\end{verbatim}
+Note that paragraphs and subparagraphs are not numbered.
+
+Note that it is permissible to skip the third level (Subsection Name) to paragraph name, i.e., to the fourth level. This would be appropriate if there were only one subsubsection, for example.  According to APA style guide that requires a change from {\tt Paragraph Name} to {\tt  Paragraph name.}. That is, only the first letter of the paragraph title is capitalized, and the title is followed by a period. It is permissible for more than one paragraph to have a Paragraph name. (That is, the fourth level can be a type of subsubsection.)  The \LaTeX\ template does not automatically provide this functionality, but following this guideline is easily done using 
+\begin{verbatim}
+
+\noindent {\it Paragraph name.}
+
+paragraph text
+
+\end{verbatim}
+
+%\noindent{\it Paragraph name.}
+%
+%paragraph text
+
+The HRI Journal format allows unnumbered sections following APA format, but this is not yet implemented in the {\tt apa\_HRI.cls} file.  You're on your own if you want to do unnumbered APA style sectioning using \LaTeX\ ; we recommend using the Word Template.  We will work towards providing this functionality in \LaTeX\ as time progresses.
+
+%*****************************************************************************************************
+\section{Figures}
+Standard \LaTeX\ figure commands apply when you use the {\tt apa\_HRI.cls} file.   
+
+Please be sure that readers can see the labels on your figures, and that both the $x$ and $y$-axes are labeled. Avoid using unnecessarily fancy graphics such as three-dimensional columns that do not add new information.
+
+\begin{figure}[tbh]
+\center
+\includegraphics[width=.4\textwidth]{figs/SampleFig1.pdf}
+\caption{The relationship between participants' relational orientations and their satisfaction with a robot's service.}
+\label{fig:SampleFig1}
+\end{figure}
+
+Figure~\ref{fig:SampleFig1} shows one example for how to represent trends.  Note that this example is a very low quality graphic intended only to show a way of representing data;  figures in the journal should be much higher quality!
+One way to show differences across conditions in a graph is to use letters to label which means are significantly different with the others. If you test many means, be sure to adjust for the number of significance tests using (a) planned contrasts, (b) students’ t tests or Tukey tests, or (c) Bonferroni adjustments of your p values.
+
+Figure~\ref{fig:SampleFig3} shows another example of a figure. Here, the author has used a diagram to convey information about his method.
+\begin{figure}[tbh]
+\center
+\includegraphics[width=.8\textwidth]{figs/SampleFig3.pdf}
+\caption{Tag extraction process. A. Groups of views chat while watching a video. B. Chat transcripts collected. C. Transcripts processed into a collection of stemmed terms. D. IDF weights computed. E. Term frequency tables computed for each video. F. Tag extraction process computes tF-IDF weights. Example shows terms spoken during video 1. G. IDF weights are global across all videos. H. Tag extraction for terms with the highest TF-IDF weights. }
+\label{fig:SampleFig3}
+\end{figure}
+
+\section{Tables}
+Standard \LaTeX\ table commands also apply.  Table~\ref{tab:specificConditions} was created using the following commands:
+\begin{verbatim}
+\begin{table}[htb]
+  \caption{Be sure to put the caption at the top 
+      of the table environment so that the caption 
+      appears above the table.}  
+  \begin{tabular}{ | c | c |c| c | c |} \hline
+    & \multicolumn{2}{c|}{\textbf{Variable 2}} & 
+              \multicolumn{2}{c|}{\textbf{Variable 3 }} 
+              \\ \cline{2-5}
+    \textbf{Variable 1}  & \textbf {Low} &
+               \textbf {High} & \textbf {Small} 
+               & \textbf {Big} \\\hline
+     News & 47.1(3.0) & 14.1 (.1) & 26.9 (4.0) 
+               & 13.8 (2.0) \\\hline
+     Politics & 34.7 (2.0) &	28.6 (.1) & 26.4 (4.0)
+              & 25.9 (2.6) \\\hline
+     \multicolumn{5}{c}{}  
+     			% This is a patch to fix a bug in the table command.
+  \end{tabular}
+  \label{tab:specificConditions}
+\end{table}
+\end{verbatim}
+
+\begin{table}[htb]
+  \caption{Be sure to put the caption at the top of the table environment so that the caption appears above the table.}  
+  \begin{tabular}{ | c | c |c| c | c |} \hline
+    %& \multicolumn{2}{c}{\textbf{Name of Experimental Variable}} \\\hline
+    & \multicolumn{2}{c|}{\textbf{Variable 2}} & \multicolumn{2}{c|}{\textbf{Variable 3 }} \\ \cline{2-5}
+    \textbf{Variable 1}  & \textbf {Low} & \textbf {High} 
+    		& \textbf {Small} & \textbf {Big} \\\hline
+     News & 47.1(3.0) & 14.1 (.1) & 26.9 (4.0) & 13.8 (2.0) \\\hline
+     Politics & 34.7 (2.0) &	28.6 (.1)	 & 26.4 (4.0)	& 25.9 (2.6) \\\hline
+     \multicolumn{5}{c}{}  % This is a patch to fix a bug in the table command.
+  \end{tabular}
+  \label{tab:specificConditions}
+\end{table}
+
+Note that the caption command {\em must appear at the top of the definition} because the HRI Journal style requires captions that appear above the table.  Note also that a common formatting error is to make a table wider than the linewidth.  Rearrange such tables to avoid this formatting error.
+
+Please give adequate information not just for current readers but also for subsequent meta-analyses that may use your results. To be useful, you should present means and standard errors (if you have done analyses of variance or regressions) or standard deviations.  
+
+\section{Statistics}
+
+Here are some examples of how to cite various statistical tests in your paper. Typically you would also point readers to a table or figure, or insert the means and standard error values into your text.
+
+ANOVA results are cited using the F test (e.g., $F (1, 38) = 4.94$, $p = .04$). F and p are italicized. Give the exact $p$ value to two decimal places except when greater better than $p < .01$. Try to avoid more than two decimal places, as readers are not very interested in exact values; comparisons are more important. The $F$ value is followed by the degrees of freedom in the numerator and denominator. Here is how one author of a mobile phone study (Author, 2010) reported an interaction effect:
+\begin{quotation}
+The data were analyzed in a 2 (Age: young vs. old) x 2 (Device: Phone A vs. B) mixed measures analysis of variance (ANOVA). We found an interaction of Age X Phone ($F [1, 38] = 26.18$, $p < .0001$). The contrast showed older people using Phone B took considerably longer to complete the task, $F (1, 38) = 69.16$, $p = .02.$ (p. 6).
+\end{quotation}
+Correlations using product moment tests are reported using $r$ (e.g., $r (200) = .19$). The number in parenthesis following the $r$ value represents the degrees of freedom ({\it df}),  or N – 1. Including the degrees of freedom provides the reader with a sense of statistical significance, in that correlations are highly sensitive to the number of data points. For instance, with 200 scores on both variables, .19 will be a significant correlation whereas with only 30 people, it will not be statistically significant.
+
+T tests (e.g., $t [20] = 100.2$, $p < .01$) are reported giving the degrees of freedom in the denominator. (The numerator {\it df} is always $1$, as is true of correlations.)
+Notice how brackets are placed inside parentheses to reduce confusion.
+
+%*****************************************************************************************************
+\section{References}
+There are many rules for citing references using the APA format, but you should satisfy most of them by following the template.  This section provides a few examples to emphasize some of the most fundamental rules.  An excellent online resource can be found at {\tt http://www.nova.edu/library/dils/lessons/apa/print.htm}. 
+
+Citing two papers with multiple authors, but the same first author~\cite{ParasuramanEtAl2000,ParasuramanRiley97}.
+
+A collection~\cite{balch2002}.
+
+A journal paper~\cite{ParasuramanRiley97}.  Note that APA journal references do not include issue number.
+
+A paper in a conference proceedings~\cite{OlsenWoodTurner2004}.
+
+A paper with many authors~\cite{BradshawAdjAuto2002}.
+
+Some papers appear in electronic-only proceedings or journals.  For some of those journals, no page number or publisher address is included.  If this is the case, please include the Digital Object Identifier (DOI) (see {\tt http://www.doi.org/}.
+
+DOI's must be included for all references that have them.  You can look up the DOI for a published paper by going to {\tt http://www.crossref.org/guestquery/} and entering bibilographic information.  This form will return the DOI in as a link to a webpage.  Include this webpage in the {\tt .bib} file using the {\sc Pages} field as illustrated in the {\em sample.bib} file as follows:
+
+\noindent{\tt Pages = \{230-253, http://dx.doi.org/10.1518/001872097778543886\}}.
+
+\noindent Note that the {\sc URL} field is automatically stripped out by the {\em apa.cls} file, so including the DOI by the page number is a workaround until we fix this.
+
+%\section{Hypertex}
+%A note on the {\tt Hypertex} style file sometimes used for citing URLs.  This style file {\bf cannot} be used in the journal because it creates boxes that have to be manually stripped out before the paper can be published.
+
+
+%*****************************************************************************************************
+\section{Quotations}
+For long quotations, please indent the quote as follows:
+\begin{quote}
+Four score and seven years ago our fathers brought forth on this continent a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal.
+
+Now we are engaged in a great civil war, testing whether that nation, or any nation, so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.
+
+Its parenthetical citation should be placed after the block's last item of punctuation.
+
+\end{quote}
+
+%*****************************************************************************************************
+\section {Section Titles}
+\label{sec:Methods}
+
+The titles of the different sections will vary widely across papers, but there are some good practices that can be followed.  This section identifies some common practices used in papers that report empirical results from experiments involving humans subjects.  The examples are taken from {\tt http://www.uwsp.edu/psych/mp/APA/apa4b.htm},
+\begin{verbatim}
+\section{Introduction}
+\section{Related Literature/Work}
+\section{Method}
+\subsection{Subjects/Participants}
+\subsection{Apparatus/Materials}
+\subsection{Design}
+\subsection{Procedure}
+\subsection{Measures}
+\section{Results}
+\section{Discussion}
+\section{Conclusion}
+\end{verbatim}
+The discussion section often includes a statement of the limitations of the results.  The design subsection often includes a clear list of hypotheses to be evaluated.
+
+Please note that all papers should not conform to this pattern of sectioning.  It is provided only as an example of some of the sections that are often included in empirical studies involving human participants.
+
+%*****************************************************************************************************
+
+\section{Acknowledgements}
+Acknowledgements should be given at the end of the paper.  You should acknowledge anyone who reviewed and helped you with your work here. Also acknowledge all sources of funding. This is also the place to declare any conflicts of interest. 
+
+Use the following commands for acknowledgements:
+\begin{verbatim}
+\section*{Acknowledgements} Acknowledgement text
+\end{verbatim}
+
+\section{Biblography}
+
+The bibliography is created using the following commands:
+\begin{verbatim}
+\bibliography{sample.bib}
+\end{verbatim}
+Unlike many \LaTeX\ documents, no biliographystyle command is used since this is implied by the {\sf apacite} and {\sf apa\_HRI.cls} options. 
+
+
+
+
+\section{Author Affiliations}
+It is good practice to include author affiliations and contact information.  For this journal, affiliation and contact information is included after the biliography using the following commands:
+\begin{verbatim}
+\hrule
+\vspace*{.1in}
+ First author, Affiliation, Institution, City, Country.  
+ Email: author1\@gmail.com.  
+ Second author, Affiliation, Institution, City, Country.  
+ Email: author2\@gmail.com
+\end{verbatim}
+
+\bibliography{sample}
+
+\hrule
+\vspace*{.1in}
+Authors' names and contact information: First author, Affiliation, Institution, City, Country.  Email: author1\@gmail.com.  Second author, Affiliation, Institution, City, Country.  Email: author2\@gmail.com.
+
+\end{document} 
+
